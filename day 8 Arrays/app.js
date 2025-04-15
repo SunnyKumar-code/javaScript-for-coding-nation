@@ -18,14 +18,23 @@
 // console.log(arr);
 
 const arr = [2,2,5,55,12,10,54]
-// const joinMe=arr.join(",")
+const joinMe=arr.join(",")
 // console.log(typeof(joinMe));
 
-// const newArr = joinMe.split(",")
+const newArr = joinMe.split(",")
 // console.log(newArr);
 
-delete arr[4]
-console.log(arr);
+console.log(newArr);
+
+const numArr = []
+for(let i of newArr){
+    numArr.push(Number(i))
+}
+
+console.log(numArr);
+
+// delete arr[4]
+// console.log(arr);
 
 
 
