@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background: #e0ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: #006400;
+}
+.main{
+    width: 500px;
+}
+.f1{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E9FFFF;
+}
+.icon{
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    width: 90%;
+    cursor: pointer;
+}
+.iconBox{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 10px;
+}
+.iconBox p{
+    font-size: 16px;
+}
+.iconBox img{
+    width: 50px;
+    height: 50px;
+}
+.iconBox:hover,
+.iconBox.active{
+    background-color: #8fbc8f;
+    color: #fff;
+}
+
+button{
+    width: 150px;
+    padding: 15px;
+    background-color: #008b8b;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4682B4;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.f2{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #E9FFFF;
+}
