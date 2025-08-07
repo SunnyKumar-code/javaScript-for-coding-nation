@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch Me Button</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    button {
+      position: absolute;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background-color: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <button 
+    onmouseover='this.style.left = Math.random() * 90 + "vw"; this.style.top = Math.random() * 90 + "vh";'
+  > 
+    Catch Me
+  </button>
+</body>
+</html>
